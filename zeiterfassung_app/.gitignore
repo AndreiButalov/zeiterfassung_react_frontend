@@ -9,6 +9,7 @@
 # production
 /build
 
+
 # misc
 .DS_Store
 .env
@@ -31,8 +32,24 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 
-# # Optional: OS-specific files
-# Thumbs.db
-# ehthumbs.db
-# Icon?
-# Desktop.ini
+# Node modules
+node_modules/
+
+# Build output
+build/
+dist/
+
+
+# IDE / Editor Dateien
+
+*.sublime-workspace
+*.sublime-project
+
+# OS spezifische Dateien
+.DS_Store
+Thumbs.db
+
+# Optional: coverage reports (falls Tests mit Jest)
+coverage/
+
+
